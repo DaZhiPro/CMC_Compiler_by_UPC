@@ -1,0 +1,21 @@
+j main
+FUNC void main()
+VAR int n
+sum = 0
+PRINT Please input n:  3
+PRINT EndLine 4
+SCAN n
+i = 1
+Label1LB: 
+<> = (i <= n)
+BZ Label2LE(<>=0)
+Label3LO: 
+sum = sum + i
+i = i + 1
+<> = (i <= n)
+BNZ Label3LO(<>=1)
+Label2LE: 
+PRINT sum =  3
+PRINT EndLine 4
+PRINT sum 1
+PRINT EndLine 4

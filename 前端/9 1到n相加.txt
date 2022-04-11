@@ -1,0 +1,13 @@
+void main()
+{
+    int n, i, sum;
+    sum = 0;
+    printf("Please input n: ");
+    scanf(n); 
+    for(i=1; i<=n; i=i+1)	
+    {		
+        sum = sum + i;	
+    }	    
+    printf("sum = ");
+printf(sum);	
+}

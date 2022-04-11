@@ -1,0 +1,30 @@
+
+void hanoi(char a, char b, char c, int n)
+{
+    if (n == 1)
+    {
+        printf("move ", a);
+        printf("to-->", c);
+
+        printf("-----------------");
+    }
+    else
+    {
+        hanoi(a, c, b, n - 1);
+        printf("move ", a);
+        printf("to-->", c);
+        printf("-----------------");
+        hanoi(b, a, c, n - 1);
+    }
+}
+
+void main()
+{
+    int n;
+    char h = 'A';
+    char j = 'B';
+    char k = 'C';
+    scanf(n);
+    hanoi(h, j, k, n);
+    printf("Finish!")
+}

@@ -1,0 +1,41 @@
+.data
+s_0: .asciiz "Please input n: "
+s_1: .asciiz "sum = "
+nextLine: .asciiz "\n"
+.text
+j main
+main:
+move $fp,$sp
+addiu $sp,$sp,-24
+li $s0,0
+la $a0,s_0
+li $v0,4
+syscall
+la $a0,nextLine
+li $v0,4
+syscall
+li $v0,5
+syscall
+move $s1,$v0
+li $s2,1
+Label1LB:
+bgt $s2,$s1,Label2LE
+Label3LO:
+addu $s0,$s0,$s2
+addiu $s2,$s2,1
+ble $s2,$s1,Label3LO
+Label2LE:
+la $a0,s_1
+li $v0,4
+syscall
+la $a0,nextLine
+li $v0,4
+syscall
+move $a0,$s0
+li $v0,1
+syscall
+la $a0,nextLine
+li $v0,4
+syscall
+li $v0,10
+syscall
