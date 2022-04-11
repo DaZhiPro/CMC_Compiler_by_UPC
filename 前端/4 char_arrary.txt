@@ -1,0 +1,25 @@
+char net[9];
+char toChar(int i) {
+      return(net[i]);
+}
+void main() {
+	int i;
+	char x;
+	i = 0;
+	net[0] = 'a';
+	net[1]='b';
+	net[2] = 'c';
+	net[3]='d';
+	net[4] = 'e';
+	net[5]='f';
+	net[6] = 'g';
+	net[7]='h';
+	net[8]='i';
+
+	while (i < 9) {
+			x = toChar(i);
+			printf(x);
+			i = i + 1;
+		}
+	return;
+}

@@ -1,0 +1,18 @@
+
+const int PI = 3;
+
+void main() {
+
+               int _global = 233;
+	switch(PI) {
+		case 1: _global = _global + 10;
+		default: _global = _global + 100;
+	}
+	switch(PI) {
+		case 2: _global = _global + 1000;
+		case 3: _global = _global + 10000;
+		case 4: printf("Fallthrough, should not print this");
+		default:;
+	}
+	printf(_global);
+}

@@ -1,0 +1,20 @@
+void main() {
+    int a, b,c,d;
+    scanf(b);
+    for (a = 0; a < 3; a = a + 1) {
+        printf(b*a);
+    } 
+    while(a>0){
+		a=a-1;
+		printf(a);
+	}
+	scanf(c);
+	scanf(d);
+	if(c>d){
+		printf("c>d");
+	}
+	else{
+		printf("c<=d");
+	}
+	printf("testfile3 over!");
+}

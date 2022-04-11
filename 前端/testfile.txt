@@ -1,0 +1,18 @@
+void main()
+{
+	/*variable definition*/
+	int a, b, sum, sub, mul, div;
+	scanf(a);
+	scanf(b);
+	printf(a);
+	printf(b);
+	/*add, subtract, multiply and divide */
+	sum = a + b;
+	sub = a - b;
+	mul = a * b;
+	div = a / b;
+	printf("sum= ", sum);
+	printf("sub= ", sub);
+	printf("mul= ", mul);
+	printf("div= ", div);
+}Íýýý

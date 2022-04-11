@@ -1,0 +1,8 @@
+void main(){
+	int a,b;
+	scanf(a);
+	scanf(b);
+	printf("a= ",a);
+	printf("b= ",b);
+	printf("a*b= ",a*b);
+}

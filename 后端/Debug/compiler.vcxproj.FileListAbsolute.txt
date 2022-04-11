@@ -1,0 +1,4 @@
+D:\编译原理课设\治\upc_cmins\compiler\Debug\compiler.exe
+D:\编译原理课设\治\compiler\Debug\compiler.exe
+D:\编译原理课设\治\compiler_v1.1\Debug\compiler.exe
+D:\编译原理课设\治\compiler_v1.2\Debug\compiler.exe
