@@ -2,7 +2,7 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>D:\编译原理课设\治\compiler_v1.2\Debug\compiler.exe</FullPath>
+      <FullPath>D:\编译原理课设\治\upc_compiler\后端\Debug\compiler.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

@@ -1,20 +1,28 @@
-void main() {
-    int a, b,c,d;
-    scanf(b);
-    for (a = 0; a < 3; a = a + 1) {
-        printf(b*a);
-    } 
-    while(a>0){
-		a=a-1;
-		printf(a);
+void main()
+{
+	int a, b, c, d;
+	scanf(b);
+	for (a = 1; a <= 5; a = a + 1)
+	{
+		printf("b*a= ", b * a);
 	}
+	while (a > 0)
+	{
+		a = a - 1;
+		printf("after a-- , a=", a);
+	}
+	printf("please input c,d :");
 	scanf(c);
 	scanf(d);
-	if(c>d){
+	printf("c = ", c);
+	printf("d = ", d);
+	if (c > d)
+	{
 		printf("c>d");
 	}
-	else{
+	else
+	{
 		printf("c<=d");
 	}
-	printf("testfile3 over!");
+	printf("testfile6 over!");
 }

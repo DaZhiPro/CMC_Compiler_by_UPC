@@ -1,7 +1,79 @@
-﻿  main.cpp
-D:\编译原理课设\治\compiler_v1.2\Global.h(221,21): warning C4018: “<”: 有符号/无符号不匹配
-D:\编译原理课设\治\compiler_v1.2\Global.h(226,21): warning C4018: “<”: 有符号/无符号不匹配
-D:\编译原理课设\治\compiler_v1.2\Global.h(231,21): warning C4018: “<”: 有符号/无符号不匹配
-D:\编译原理课设\治\compiler_v1.2\Global.h(236,21): warning C4018: “<”: 有符号/无符号不匹配
-D:\编译原理课设\治\compiler_v1.2\Global.h(240,21): warning C4018: “<”: 有符号/无符号不匹配
-  compiler.vcxproj -> D:\编译原理课设\治\compiler_v1.2\Debug\compiler.exe
+﻿  Error.cpp
+D:\编译原理课设\治\upc_compiler\后端\Global.h(221,21): warning C4018: “<”: 有符号/无符号不匹配
+D:\编译原理课设\治\upc_compiler\后端\Global.h(226,21): warning C4018: “<”: 有符号/无符号不匹配
+D:\编译原理课设\治\upc_compiler\后端\Global.h(231,21): warning C4018: “<”: 有符号/无符号不匹配
+D:\编译原理课设\治\upc_compiler\后端\Global.h(236,21): warning C4018: “<”: 有符号/无符号不匹配
+D:\编译原理课设\治\upc_compiler\后端\Global.h(240,21): warning C4018: “<”: 有符号/无符号不匹配
+  Lexer.cpp
+D:\编译原理课设\治\upc_compiler\后端\Global.h(221,21): warning C4018: “<”: 有符号/无符号不匹配
+D:\编译原理课设\治\upc_compiler\后端\Global.h(226,21): warning C4018: “<”: 有符号/无符号不匹配
+D:\编译原理课设\治\upc_compiler\后端\Global.h(231,21): warning C4018: “<”: 有符号/无符号不匹配
+D:\编译原理课设\治\upc_compiler\后端\Global.h(236,21): warning C4018: “<”: 有符号/无符号不匹配
+D:\编译原理课设\治\upc_compiler\后端\Global.h(240,21): warning C4018: “<”: 有符号/无符号不匹配
+  main.cpp
+D:\编译原理课设\治\upc_compiler\后端\Global.h(221,21): warning C4018: “<”: 有符号/无符号不匹配
+D:\编译原理课设\治\upc_compiler\后端\Global.h(226,21): warning C4018: “<”: 有符号/无符号不匹配
+D:\编译原理课设\治\upc_compiler\后端\Global.h(231,21): warning C4018: “<”: 有符号/无符号不匹配
+D:\编译原理课设\治\upc_compiler\后端\Global.h(236,21): warning C4018: “<”: 有符号/无符号不匹配
+D:\编译原理课设\治\upc_compiler\后端\Global.h(240,21): warning C4018: “<”: 有符号/无符号不匹配
+  MidCode.cpp
+D:\编译原理课设\治\upc_compiler\后端\Global.h(221,21): warning C4018: “<”: 有符号/无符号不匹配
+D:\编译原理课设\治\upc_compiler\后端\Global.h(226,21): warning C4018: “<”: 有符号/无符号不匹配
+D:\编译原理课设\治\upc_compiler\后端\Global.h(231,21): warning C4018: “<”: 有符号/无符号不匹配
+D:\编译原理课设\治\upc_compiler\后端\Global.h(236,21): warning C4018: “<”: 有符号/无符号不匹配
+D:\编译原理课设\治\upc_compiler\后端\Global.h(240,21): warning C4018: “<”: 有符号/无符号不匹配
+  MipsCode.cpp
+D:\编译原理课设\治\upc_compiler\后端\Global.h(221,21): warning C4018: “<”: 有符号/无符号不匹配
+D:\编译原理课设\治\upc_compiler\后端\Global.h(226,21): warning C4018: “<”: 有符号/无符号不匹配
+D:\编译原理课设\治\upc_compiler\后端\Global.h(231,21): warning C4018: “<”: 有符号/无符号不匹配
+D:\编译原理课设\治\upc_compiler\后端\Global.h(236,21): warning C4018: “<”: 有符号/无符号不匹配
+D:\编译原理课设\治\upc_compiler\后端\Global.h(240,21): warning C4018: “<”: 有符号/无符号不匹配
+D:\编译原理课设\治\upc_compiler\后端\MipsCode.cpp(54,20): warning C4018: “<”: 有符号/无符号不匹配
+D:\编译原理课设\治\upc_compiler\后端\MipsCode.cpp(56,9): warning C4018: “<”: 有符号/无符号不匹配
+D:\编译原理课设\治\upc_compiler\后端\MipsCode.cpp(469,20): warning C4018: “<”: 有符号/无符号不匹配
+D:\编译原理课设\治\upc_compiler\后端\MipsCode.cpp(491,20): warning C4018: “<”: 有符号/无符号不匹配
+D:\编译原理课设\治\upc_compiler\后端\MipsCode.cpp(509,21): warning C4018: “<”: 有符号/无符号不匹配
+D:\编译原理课设\治\upc_compiler\后端\MipsCode.cpp(542,22): warning C4018: “<”: 有符号/无符号不匹配
+D:\编译原理课设\治\upc_compiler\后端\MipsCode.cpp(544,11): warning C4018: “<”: 有符号/无符号不匹配
+D:\编译原理课设\治\upc_compiler\后端\MipsCode.cpp(1426,24): warning C4018: “<”: 有符号/无符号不匹配
+D:\编译原理课设\治\upc_compiler\后端\MipsCode.cpp(1431,24): warning C4018: “<”: 有符号/无符号不匹配
+D:\编译原理课设\治\upc_compiler\后端\MipsCode.cpp(1559,25): warning C4018: “<”: 有符号/无符号不匹配
+  Optimization.cpp
+D:\编译原理课设\治\upc_compiler\后端\Global.h(221,21): warning C4018: “<”: 有符号/无符号不匹配
+D:\编译原理课设\治\upc_compiler\后端\Global.h(226,21): warning C4018: “<”: 有符号/无符号不匹配
+D:\编译原理课设\治\upc_compiler\后端\Global.h(231,21): warning C4018: “<”: 有符号/无符号不匹配
+D:\编译原理课设\治\upc_compiler\后端\Global.h(236,21): warning C4018: “<”: 有符号/无符号不匹配
+D:\编译原理课设\治\upc_compiler\后端\Global.h(240,21): warning C4018: “<”: 有符号/无符号不匹配
+D:\编译原理课设\治\upc_compiler\后端\Optimization.cpp(10,21): warning C4018: “<”: 有符号/无符号不匹配
+D:\编译原理课设\治\upc_compiler\后端\Optimization.cpp(27,25): warning C4018: “<”: 有符号/无符号不匹配
+D:\编译原理课设\治\upc_compiler\后端\Optimization.cpp(42,21): warning C4018: “<”: 有符号/无符号不匹配
+D:\编译原理课设\治\upc_compiler\后端\Optimization.cpp(48,24): warning C4018: “<”: 有符号/无符号不匹配
+D:\编译原理课设\治\upc_compiler\后端\Optimization.cpp(61,24): warning C4018: “<”: 有符号/无符号不匹配
+D:\编译原理课设\治\upc_compiler\后端\Optimization.cpp(88,23): warning C4018: “<”: 有符号/无符号不匹配
+D:\编译原理课设\治\upc_compiler\后端\Optimization.cpp(168,26): warning C4018: “<”: 有符号/无符号不匹配
+D:\编译原理课设\治\upc_compiler\后端\Optimization.cpp(217,20): warning C4018: “<”: 有符号/无符号不匹配
+D:\编译原理课设\治\upc_compiler\后端\Optimization.cpp(368,20): warning C4018: “<”: 有符号/无符号不匹配
+D:\编译原理课设\治\upc_compiler\后端\Optimization.cpp(417,21): warning C4018: “<”: 有符号/无符号不匹配
+  Parser.cpp
+D:\编译原理课设\治\upc_compiler\后端\Global.h(221,21): warning C4018: “<”: 有符号/无符号不匹配
+D:\编译原理课设\治\upc_compiler\后端\Global.h(226,21): warning C4018: “<”: 有符号/无符号不匹配
+D:\编译原理课设\治\upc_compiler\后端\Global.h(231,21): warning C4018: “<”: 有符号/无符号不匹配
+D:\编译原理课设\治\upc_compiler\后端\Global.h(236,21): warning C4018: “<”: 有符号/无符号不匹配
+D:\编译原理课设\治\upc_compiler\后端\Global.h(240,21): warning C4018: “<”: 有符号/无符号不匹配
+D:\编译原理课设\治\upc_compiler\后端\Parser.cpp(1669,17): warning C4018: “<”: 有符号/无符号不匹配
+D:\编译原理课设\治\upc_compiler\后端\Parser.cpp(1765,20): warning C4018: “<”: 有符号/无符号不匹配
+D:\编译原理课设\治\upc_compiler\后端\Parser.cpp(1932,32): warning C4018: “<”: 有符号/无符号不匹配
+  pretreat.cpp
+D:\编译原理课设\治\upc_compiler\后端\global.h(221,21): warning C4018: “<”: 有符号/无符号不匹配
+D:\编译原理课设\治\upc_compiler\后端\global.h(226,21): warning C4018: “<”: 有符号/无符号不匹配
+D:\编译原理课设\治\upc_compiler\后端\global.h(231,21): warning C4018: “<”: 有符号/无符号不匹配
+D:\编译原理课设\治\upc_compiler\后端\global.h(236,21): warning C4018: “<”: 有符号/无符号不匹配
+D:\编译原理课设\治\upc_compiler\后端\global.h(240,21): warning C4018: “<”: 有符号/无符号不匹配
+  Symbol.cpp
+D:\编译原理课设\治\upc_compiler\后端\Global.h(221,21): warning C4018: “<”: 有符号/无符号不匹配
+D:\编译原理课设\治\upc_compiler\后端\Global.h(226,21): warning C4018: “<”: 有符号/无符号不匹配
+D:\编译原理课设\治\upc_compiler\后端\Global.h(231,21): warning C4018: “<”: 有符号/无符号不匹配
+D:\编译原理课设\治\upc_compiler\后端\Global.h(236,21): warning C4018: “<”: 有符号/无符号不匹配
+D:\编译原理课设\治\upc_compiler\后端\Global.h(240,21): warning C4018: “<”: 有符号/无符号不匹配
+  正在生成代码...
+  compiler.vcxproj -> D:\编译原理课设\治\upc_compiler\后端\Debug\compiler.exe
