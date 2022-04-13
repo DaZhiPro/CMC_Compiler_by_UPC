@@ -7,7 +7,7 @@ j main
 main:
 move $fp,$sp
 addiu $sp,$sp,-24
-li $s0,0
+li $s0,1
 la $a0,s_0
 li $v0,4
 syscall
@@ -21,7 +21,7 @@ li $s2,1
 Label1LB:
 bgt $s2,$s1,Label2LE
 Label3LO:
-addu $s0,$s0,$s2
+mul $s0,$s0,$s2
 addiu $s2,$s2,1
 ble $s2,$s1,Label3LO
 Label2LE:

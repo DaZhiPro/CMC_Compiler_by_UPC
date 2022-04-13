@@ -184,11 +184,11 @@ void splitBlock() {
 								que.push(blockVe[i].midCodeVector[defPoi].right);
 							}
 							blockVe[i].midCodeVector.erase(blockVe[i].midCodeVector.begin() + defPoi,
-								blockVe[i].midCodeVector.begin() + defPoi + 1);  //defPoiɾȥ
+								blockVe[i].midCodeVector.begin() + defPoi + 1);  
 							while (!que.empty()) {
 								string name = que.front();
 								que.pop();
-								for (int qi = defPoi; qi >= 0; qi--) {  //defPoi��ʼ����
+								for (int qi = defPoi; qi >= 0; qi--) {  
 									if (blockVe[i].midCodeVector[qi].right == name) {
 										if (blockVe[i].midCodeVector[qi].left[0] == '#') {
 											que.push(blockVe[i].midCodeVector[qi].left);
@@ -197,7 +197,7 @@ void splitBlock() {
 											que.push(blockVe[i].midCodeVector[qi].right);
 										}
 										blockVe[i].midCodeVector.erase(blockVe[i].midCodeVector.begin() + qi,
-											blockVe[i].midCodeVector.begin() + qi + 1);  //qiɾȥ
+											blockVe[i].midCodeVector.begin() + qi + 1);  
 										break;
 									}
 								}
@@ -222,19 +222,19 @@ void calUseDef(Block& bl, string funcName) {
 		case MULTOP:
 		case DIVOP:
 			if (symList[funcName].find(mc.left) != symList[funcName].end()
-				&& (symList[funcName][mc.left].kind == 1 || symList[funcName][mc.left].kind == 2) && mc.left[0] != '#') {  //�ֲ�����
+				&& (symList[funcName][mc.left].kind == 1 || symList[funcName][mc.left].kind == 2) && mc.left[0] != '#') {
 				if (use.find(mc.left) == use.end() && def.find(mc.left) == def.end()) {
 					use.insert(mc.left);
 				}
 			}
 			if (symList[funcName].find(mc.right) != symList[funcName].end()
-				&& (symList[funcName][mc.right].kind == 1 || symList[funcName][mc.right].kind == 2) && mc.right[0] != '#') {  //�ֲ�����
+				&& (symList[funcName][mc.right].kind == 1 || symList[funcName][mc.right].kind == 2) && mc.right[0] != '#') {  
 				if (use.find(mc.right) == use.end() && def.find(mc.right) == def.end()) {
 					use.insert(mc.right);
 				}
 			}
 			if (symList[funcName].find(mc.result) != symList[funcName].end()
-				&& (symList[funcName][mc.result].kind == 1 || symList[funcName][mc.result].kind == 2) && mc.result[0] != '#') {  //�ֲ�����
+				&& (symList[funcName][mc.result].kind == 1 || symList[funcName][mc.result].kind == 2) && mc.result[0] != '#') {  
 				if (use.find(mc.result) == use.end() && def.find(mc.result) == def.end()) {
 					def.insert(mc.result);
 				}
@@ -247,13 +247,13 @@ void calUseDef(Block& bl, string funcName) {
 		case EQLOP:
 		case NEQOP:
 			if (symList[funcName].find(mc.left) != symList[funcName].end()
-				&& (symList[funcName][mc.left].kind == 1 || symList[funcName][mc.left].kind == 2) && mc.left[0] != '#') {  //�ֲ�����
+				&& (symList[funcName][mc.left].kind == 1 || symList[funcName][mc.left].kind == 2) && mc.left[0] != '#') {  
 				if (use.find(mc.left) == use.end() && def.find(mc.left) == def.end()) {
 					use.insert(mc.left);
 				}
 			}
 			if (symList[funcName].find(mc.right) != symList[funcName].end()
-				&& (symList[funcName][mc.right].kind == 1 || symList[funcName][mc.right].kind == 2) && mc.right[0] != '#') {  //�ֲ�����
+				&& (symList[funcName][mc.right].kind == 1 || symList[funcName][mc.right].kind == 2) && mc.right[0] != '#') { 
 				if (use.find(mc.right) == use.end() && def.find(mc.right) == def.end()) {
 					use.insert(mc.right);
 				}
@@ -261,13 +261,13 @@ void calUseDef(Block& bl, string funcName) {
 			break;
 		case ASSIGNOP:
 			if (symList[funcName].find(mc.left) != symList[funcName].end()
-				&& (symList[funcName][mc.left].kind == 1 || symList[funcName][mc.left].kind == 2) && mc.left[0] != '#') {  //�ֲ�����
+				&& (symList[funcName][mc.left].kind == 1 || symList[funcName][mc.left].kind == 2) && mc.left[0] != '#') { 
 				if (use.find(mc.left) == use.end() && def.find(mc.left) == def.end()) {
 					use.insert(mc.left);
 				}
 			}
 			if (symList[funcName].find(mc.result) != symList[funcName].end()
-				&& (symList[funcName][mc.result].kind == 1 || symList[funcName][mc.result].kind == 2) && mc.result[0] != '#') {  //�ֲ�����
+				&& (symList[funcName][mc.result].kind == 1 || symList[funcName][mc.result].kind == 2) && mc.result[0] != '#') { 
 				if (use.find(mc.result) == use.end() && def.find(mc.result) == def.end()) {
 					def.insert(mc.result);
 				}
@@ -275,13 +275,13 @@ void calUseDef(Block& bl, string funcName) {
 			break;
 		case GETARRAY:  //mc.result << " = " << mc.left << "[" << mc.right << "]
 			if (symList[funcName].find(mc.right) != symList[funcName].end()
-				&& (symList[funcName][mc.right].kind == 1 || symList[funcName][mc.right].kind == 2) && mc.right[0] != '#') {  //�ֲ�����
+				&& (symList[funcName][mc.right].kind == 1 || symList[funcName][mc.right].kind == 2) && mc.right[0] != '#') {  
 				if (use.find(mc.right) == use.end() && def.find(mc.right) == def.end()) {
 					use.insert(mc.right);
 				}
 			}
 			if (symList[funcName].find(mc.result) != symList[funcName].end()
-				&& (symList[funcName][mc.result].kind == 1 || symList[funcName][mc.result].kind == 2) && mc.result[0] != '#') {  //�ֲ�����
+				&& (symList[funcName][mc.result].kind == 1 || symList[funcName][mc.result].kind == 2) && mc.result[0] != '#') { 
 				if (use.find(mc.result) == use.end() && def.find(mc.result) == def.end()) {
 					def.insert(mc.result);
 				}
@@ -291,7 +291,7 @@ void calUseDef(Block& bl, string funcName) {
 		case RET:
 		case INLINERET:
 			if (symList[funcName].find(mc.result) != symList[funcName].end()
-				&& (symList[funcName][mc.result].kind == 1 || symList[funcName][mc.result].kind == 2) && mc.result[0] != '#') {  //�ֲ�����
+				&& (symList[funcName][mc.result].kind == 1 || symList[funcName][mc.result].kind == 2) && mc.result[0] != '#') {  
 				if (use.find(mc.result) == use.end() && def.find(mc.result) == def.end()) {
 					use.insert(mc.result);
 				}
@@ -300,7 +300,7 @@ void calUseDef(Block& bl, string funcName) {
 		case RETVALUE:
 		case SCAN:
 			if (symList[funcName].find(mc.result) != symList[funcName].end()
-				&& (symList[funcName][mc.result].kind == 1 || symList[funcName][mc.result].kind == 2) && mc.result[0] != '#') {  //�ֲ�����
+				&& (symList[funcName][mc.result].kind == 1 || symList[funcName][mc.result].kind == 2) && mc.result[0] != '#') {  
 				if (use.find(mc.result) == use.end() && def.find(mc.result) == def.end()) {
 					def.insert(mc.result);
 				}
@@ -309,7 +309,7 @@ void calUseDef(Block& bl, string funcName) {
 		case PRINT:
 			if (mc.left == "1" || mc.left == "2") {
 				if (symList[funcName].find(mc.result) != symList[funcName].end()
-					&& (symList[funcName][mc.result].kind == 1 || symList[funcName][mc.result].kind == 2) && mc.result[0] != '#') {  //�ֲ�����
+					&& (symList[funcName][mc.result].kind == 1 || symList[funcName][mc.result].kind == 2) && mc.result[0] != '#') {  
 					if (use.find(mc.result) == use.end() && def.find(mc.result) == def.end()) {
 						use.insert(mc.result);
 					}
@@ -318,13 +318,13 @@ void calUseDef(Block& bl, string funcName) {
 			break;
 		case PUTARRAY:  //mc.result << "[" << mc.left << "]" << " = " << mc.right
 			if (symList[funcName].find(mc.left) != symList[funcName].end()
-				&& (symList[funcName][mc.left].kind == 1 || symList[funcName][mc.left].kind == 2) && mc.left[0] != '#') {  //�ֲ�����
+				&& (symList[funcName][mc.left].kind == 1 || symList[funcName][mc.left].kind == 2) && mc.left[0] != '#') {  
 				if (use.find(mc.left) == use.end() && def.find(mc.left) == def.end()) {
 					use.insert(mc.left);
 				}
 			}
 			if (symList[funcName].find(mc.right) != symList[funcName].end()
-				&& (symList[funcName][mc.right].kind == 1 || symList[funcName][mc.right].kind == 2) && mc.right[0] != '#') {  //�ֲ�����
+				&& (symList[funcName][mc.right].kind == 1 || symList[funcName][mc.right].kind == 2) && mc.right[0] != '#') {  
 				if (use.find(mc.right) == use.end() && def.find(mc.right) == def.end()) {
 					use.insert(mc.right);
 				}

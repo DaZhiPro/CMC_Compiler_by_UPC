@@ -2,12 +2,12 @@
 void main()
 {
     int n, i, sum;
-    sum = 0;
+    sum = 1;
     printf("Please input n: ");
     scanf(n); 
     for(i=1; i<=n; i=i+1)	
     {		
-        sum = sum + i;	
+        sum = sum * i;	
     }	    
     printf("sum = ");
 printf(sum);	

@@ -15,7 +15,7 @@ SEMICN ;
 <变量说明>
 IDENFR sum
 ASSIGN =
-INTCON 0
+INTCON 1
 <无符号整数>
 <整数>
 <因子>
@@ -74,8 +74,7 @@ IDENFR sum
 ASSIGN =
 IDENFR sum
 <因子>
-<项>
-PLUS +
+MULT *
 IDENFR i
 <因子>
 <项>

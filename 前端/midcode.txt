@@ -1,7 +1,7 @@
 j main
 FUNC void main()
 VAR int n
-sum = 0
+sum = 1
 PRINT Please input n:  3
 PRINT EndLine 4
 SCAN n
@@ -10,7 +10,7 @@ Label1LB:
 <> = (i <= n)
 BZ Label2LE(<>=0)
 Label3LO: 
-sum = sum + i
+sum = sum * i
 i = i + 1
 <> = (i <= n)
 BNZ Label3LO(<>=1)
